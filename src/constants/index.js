@@ -141,15 +141,9 @@ const experiences = [
     company_name: '雲書苑',
     icon: kelhel,
     iconBg: '#333333',
-    date: '2023/8-2024/03',
+    date: '2023/06-2024/03',
   },
-  {
-    title: '接案前端工程師',
-    company_name: '',
-    icon: dcc,
-    iconBg: '#333333',
-    date: '2024/03-present',
-  },
+
 ];
 
 const projects = [
