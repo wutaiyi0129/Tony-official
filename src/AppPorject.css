@@ -1,0 +1,18 @@
+
+  
+  .video-responsive::-webkit-media-controls {
+    display: none !important;
+  }
+  
+  .video-responsive::-moz-media-controls {
+    display: none !important;
+  }
+  
+  .video-responsive::media-controls {
+    display: none !important;
+  }
+  
+  .video-responsive::-ms-media-controls {
+    display: none !important;
+  }
+  
