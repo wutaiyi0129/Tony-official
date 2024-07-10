@@ -1,5 +1,5 @@
 import React from 'react';
-import '/Users/wutaiyi/Downloads/Bagel-official-main/src/AppPorject.css'; // 引入自定義的CSS
+import './AppPorject.css'; // 引入自定義的CSS
 import { styles } from '../styles';
 import {  textVariant }  from '../utils/motion';
 import { motion } from 'framer-motion';
