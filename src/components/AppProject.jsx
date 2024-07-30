@@ -56,7 +56,7 @@ const AppProject = () => {
         </video>
         </div>
         <div className="w-full md:w-1/3 justify-center flex flex-wrap">
-        <h1 className={`${styles.sectionTony}`}>煮蛋計時器</h1>
+        <h1 className={`${styles.sectionTony}`}>衛福部新聞網</h1>
         <video  autoPlay muted loop>
           <source src="/video/Video6.mp4" type="video/mp4" />
           Your browser does not support the video tag.
