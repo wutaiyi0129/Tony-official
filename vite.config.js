@@ -16,11 +16,18 @@ const manifest = {
         urlPattern: ({ url }) => {
           return url.pathname.startsWith("/video/");
         },
-        handler: "CacheFirst",
+        handler: "NetworkFirst",
         options: {
+          
           cacheName: "tony-cache",
           cacheableResponse: {
             statuses: [0, 200],
+          },
+          cacheName: 'dynamic-cache',
+          networkTimeoutSeconds: 10, // 設置網絡請求超時時間
+          expiration: {
+            maxEntries: 50, // 最多快取 50 個項目
+            maxAgeSeconds: 7 * 24 * 60 * 60, // 7 天後過期
           },
         },
       },
