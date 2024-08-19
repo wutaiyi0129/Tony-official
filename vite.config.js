@@ -32,7 +32,7 @@ const manifest = {
     description: "Tony部落格",
     icons: [
       {
-        src: "/Tony-official-main/logo.png",
+        src: "logo.png",
         sizes: "512x512",
         type: "image/png",
         purpose: "any",
