@@ -41,8 +41,8 @@ const manifest = {
     theme_color: "#171717",
     background_color: "#e8ebf2",
     display: "standalone",
-    scope: "/Tony-official-main/",
-    start_url: "/Tony-official-main/",
+    scope: "/",
+    start_url: "/",
     orientation: "portrait",
   },
 };
