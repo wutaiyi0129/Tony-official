@@ -42,7 +42,7 @@ const AppProject = () => {
 
       <div className="w-full md:w-3/4 flex flex-wrap md:flex-nowrap justify-center mt-4 gap-8">
         <div className="w-full md:w-1/3 justify-center flex flex-wrap">
-        <h1 className={`${styles.sectionTony}`}>AU虛擬女友App</h1>
+        <h1 className={`${styles.sectionTony}`}>AI虛擬女友App</h1>
         <video  autoPlay muted loop>
           <source src="/video/Video4.mp4" type="video/mp4" />
           Your browser does not support the video tag.

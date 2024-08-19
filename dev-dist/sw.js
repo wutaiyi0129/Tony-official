@@ -79,10 +79,10 @@ define(['./workbox-f4a68738'], (function (workbox) { 'use strict';
    */
   workbox.precacheAndRoute([{
     "url": "registerSW.js",
-    "revision": "f5c892d964fbfc319f7e5ea4a6015849"
+    "revision": "3ca0b8505b4bec776b69afdba2768812"
   }, {
     "url": "index.html",
-    "revision": "0.sfok9od4rk"
+    "revision": "0.76be0kp44i8"
   }], {});
   workbox.cleanupOutdatedCaches();
   workbox.registerRoute(new workbox.NavigationRoute(workbox.createHandlerBoundToURL("index.html"), {
@@ -91,7 +91,7 @@ define(['./workbox-f4a68738'], (function (workbox) { 'use strict';
   workbox.registerRoute(({
     url
   }) => {
-    return url.pathname.startsWith("/");
+    return url.pathname.startsWith("/video/");
   }, new workbox.CacheFirst({
     "cacheName": "tony-cache",
     plugins: [new workbox.CacheableResponsePlugin({

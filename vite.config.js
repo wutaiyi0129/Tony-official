@@ -9,12 +9,12 @@ const manifest = {
     enabled: true,
   },
   workbox: {
-    maximumFileSizeToCacheInBytes: 5000000000,
+    maximumFileSizeToCacheInBytes: 500000000,
     globPatterns: ["**/*"],
     runtimeCaching: [
       {
         urlPattern: ({ url }) => {
-          return url.pathname.startsWith("/");
+          return url.pathname.startsWith("/video/");
         },
         handler: "CacheFirst",
         options: {
@@ -48,6 +48,6 @@ const manifest = {
 };
 
 export default defineConfig({
-  base: "/Tony-official-main/",
+  base: "/",
   plugins: [react(), VitePWA(manifest)],
 });
