@@ -9,7 +9,7 @@ const manifest = {
     enabled: true,
   },
   workbox: {
-    maximumFileSizeToCacheInBytes: 50000000,
+    maximumFileSizeToCacheInBytes: 5000000000,
     globPatterns: ["**/*"],
     runtimeCaching: [
       {
