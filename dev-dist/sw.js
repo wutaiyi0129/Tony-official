@@ -67,7 +67,7 @@ if (!self.define) {
     });
   };
 }
-define(['./workbox-f4a68738'], (function (workbox) { 'use strict';
+define(['./workbox-ec045ed0'], (function (workbox) { 'use strict';
 
   self.skipWaiting();
   workbox.clientsClaim();
@@ -82,7 +82,7 @@ define(['./workbox-f4a68738'], (function (workbox) { 'use strict';
     "revision": "3ca0b8505b4bec776b69afdba2768812"
   }, {
     "url": "index.html",
-    "revision": "0.76be0kp44i8"
+    "revision": "0.51naj9muan"
   }], {});
   workbox.cleanupOutdatedCaches();
   workbox.registerRoute(new workbox.NavigationRoute(workbox.createHandlerBoundToURL("index.html"), {
@@ -92,10 +92,14 @@ define(['./workbox-f4a68738'], (function (workbox) { 'use strict';
     url
   }) => {
     return url.pathname.startsWith("/video/");
-  }, new workbox.CacheFirst({
-    "cacheName": "tony-cache",
+  }, new workbox.NetworkFirst({
+    "cacheName": "dynamic-cache",
+    "networkTimeoutSeconds": 10,
     plugins: [new workbox.CacheableResponsePlugin({
       statuses: [0, 200]
+    }), new workbox.ExpirationPlugin({
+      maxEntries: 50,
+      maxAgeSeconds: 604800
     })]
   }), 'GET');
 

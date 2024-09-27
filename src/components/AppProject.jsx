@@ -10,6 +10,7 @@ const AppProject = () => {
       <motion.div className='ml-44 mb-12' variants={textVariant()}>
         <p className={`${styles.sectionSubText} `}>IOS 製作作品</p>
         <h2 className={`${styles.sectionHeadTextLight}`}>APP作品集</h2>
+        <a href='https://apps.apple.com/tw/app/ai%E8%99%9B%E6%93%AC%E5%B0%8D%E8%B1%A1/id6572298225' className='text-2xl text-blue-700'>上架作品</a>
       </motion.div>
     <div className="flex flex-wrap justify-center items-center">
 

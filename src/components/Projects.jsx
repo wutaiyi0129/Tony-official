@@ -125,6 +125,8 @@ const Projects = () => {
       <motion.div variants={textVariant()}>
         <p className={`${styles.sectionSubText} `}>主要負責專案</p>
         <h2 className={`${styles.sectionHeadTextLight}`}>作品集</h2>
+  
+      
       </motion.div>
 
       <div className="w-full flex">

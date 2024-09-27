@@ -19,7 +19,6 @@ const manifest = {
         handler: "NetworkFirst",
         options: {
           
-          cacheName: "tony-cache",
           cacheableResponse: {
             statuses: [0, 200],
           },

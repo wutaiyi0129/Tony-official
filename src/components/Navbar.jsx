@@ -42,6 +42,11 @@ const Navbar = () => {
               <a href={`#${nav.id}`}>{nav.title}</a>
             </li>
           ))}
+            <li className="text-eerieBlack hover:text-taupe text-[21px] font-medium font-mova uppercase tracking-[3px] cursor-pointer">
+    <a href="https://medium.com/me/stories/public" target="_blank" rel="noopener noreferrer">
+      Medium 文章
+    </a>
+  </li>
         </ul>
 
         {/* mobile */}
